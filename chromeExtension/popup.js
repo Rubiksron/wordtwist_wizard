@@ -1,11 +1,11 @@
 'use strict';
-//cbox is the element that holds the value of the ultra rare word count statistic in the chart shown before each game.
-var cbox = document.getElementsByClassName('cbox')[0].children[0].children[2].children[0].children[4].children[1].innerText;
-console.log('This is the cbox: ', cbox);
-if(cbox < 160) {
+//container_left is the element that holds the value of the ultra rare word count statistic in the chart shown before each wordtwist game.
+var container_left = document.getElementById("container_left").children[0].children[2].children[0].children[4].children[1].innerText;
+// var cbox = document.getElementsByClassName('cbox')[0].children[0].children[2].children[0].children[4].children[1].innerText;
+console.log('This is the container_left: ', container_left);
+if(container_left < 140) {
   window.location.reload();
-  console.log('This cbox is less than: ', cbox);
+  console.log('This container_left is less than: ', container_left);
 } else {
-  console.log('This cbox is more than: ', cbox);
-  alert('SHAZZAM, your game is ready!!');
+  console.log('This container_left is more than: ', container_left);
 }
